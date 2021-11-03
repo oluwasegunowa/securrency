@@ -1,0 +1,9 @@
+C:\Users\oluwa\source\repos\Securrency\Securrency.Domain\bin\Debug\netcoreapp3.1\Securrency.Domain.deps.json
+C:\Users\oluwa\source\repos\Securrency\Securrency.Domain\bin\Debug\netcoreapp3.1\Securrency.Domain.dll
+C:\Users\oluwa\source\repos\Securrency\Securrency.Domain\bin\Debug\netcoreapp3.1\Securrency.Domain.pdb
+C:\Users\oluwa\source\repos\Securrency\Securrency.Domain\obj\Debug\netcoreapp3.1\Securrency.Domain.csprojAssemblyReference.cache
+C:\Users\oluwa\source\repos\Securrency\Securrency.Domain\obj\Debug\netcoreapp3.1\Securrency.Domain.AssemblyInfoInputs.cache
+C:\Users\oluwa\source\repos\Securrency\Securrency.Domain\obj\Debug\netcoreapp3.1\Securrency.Domain.AssemblyInfo.cs
+C:\Users\oluwa\source\repos\Securrency\Securrency.Domain\obj\Debug\netcoreapp3.1\Securrency.Domain.csproj.CoreCompileInputs.cache
+C:\Users\oluwa\source\repos\Securrency\Securrency.Domain\obj\Debug\netcoreapp3.1\Securrency.Domain.dll
+C:\Users\oluwa\source\repos\Securrency\Securrency.Domain\obj\Debug\netcoreapp3.1\Securrency.Domain.pdb

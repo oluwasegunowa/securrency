@@ -1,0 +1,12 @@
+C:\Users\oluwa\source\repos\Securrency\Securrency.Wallet.Application\bin\Debug\netcoreapp3.1\Wallet.Application.deps.json
+C:\Users\oluwa\source\repos\Securrency\Securrency.Wallet.Application\bin\Debug\netcoreapp3.1\Wallet.Application.dll
+C:\Users\oluwa\source\repos\Securrency\Securrency.Wallet.Application\bin\Debug\netcoreapp3.1\Wallet.Application.pdb
+C:\Users\oluwa\source\repos\Securrency\Securrency.Wallet.Application\obj\Debug\netcoreapp3.1\Wallet.Application.csprojAssemblyReference.cache
+C:\Users\oluwa\source\repos\Securrency\Securrency.Wallet.Application\obj\Debug\netcoreapp3.1\Wallet.Application.AssemblyInfoInputs.cache
+C:\Users\oluwa\source\repos\Securrency\Securrency.Wallet.Application\obj\Debug\netcoreapp3.1\Wallet.Application.AssemblyInfo.cs
+C:\Users\oluwa\source\repos\Securrency\Securrency.Wallet.Application\obj\Debug\netcoreapp3.1\Wallet.Application.csproj.CoreCompileInputs.cache
+C:\Users\oluwa\source\repos\Securrency\Securrency.Wallet.Application\obj\Debug\netcoreapp3.1\Wallet.Application.dll
+C:\Users\oluwa\source\repos\Securrency\Securrency.Wallet.Application\obj\Debug\netcoreapp3.1\Wallet.Application.pdb
+C:\Users\oluwa\source\repos\Securrency\Securrency.Wallet.Application\bin\Debug\netcoreapp3.1\Securrency.Domain.dll
+C:\Users\oluwa\source\repos\Securrency\Securrency.Wallet.Application\bin\Debug\netcoreapp3.1\Securrency.Domain.pdb
+C:\Users\oluwa\source\repos\Securrency\Securrency.Wallet.Application\obj\Debug\netcoreapp3.1\Wallet.Application.csproj.CopyComplete

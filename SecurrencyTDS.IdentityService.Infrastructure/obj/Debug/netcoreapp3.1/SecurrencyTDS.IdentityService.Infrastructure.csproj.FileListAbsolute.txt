@@ -1,0 +1,12 @@
+C:\Users\oluwa\source\repos\Securrency\SecurrencyTDS.IdentityService.Infrastructure\obj\Debug\netcoreapp3.1\SecurrencyTDS.IdentityService.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\oluwa\source\repos\Securrency\SecurrencyTDS.IdentityService.Infrastructure\obj\Debug\netcoreapp3.1\SecurrencyTDS.IdentityService.Infrastructure.AssemblyInfo.cs
+C:\Users\oluwa\source\repos\Securrency\SecurrencyTDS.IdentityService.Infrastructure\obj\Debug\netcoreapp3.1\SecurrencyTDS.IdentityService.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\oluwa\source\repos\Securrency\SecurrencyTDS.IdentityService.Infrastructure\bin\Debug\netcoreapp3.1\SecurrencyTDS.IdentityService.Infrastructure.deps.json
+C:\Users\oluwa\source\repos\Securrency\SecurrencyTDS.IdentityService.Infrastructure\bin\Debug\netcoreapp3.1\SecurrencyTDS.IdentityService.Infrastructure.dll
+C:\Users\oluwa\source\repos\Securrency\SecurrencyTDS.IdentityService.Infrastructure\bin\Debug\netcoreapp3.1\SecurrencyTDS.IdentityService.Infrastructure.pdb
+C:\Users\oluwa\source\repos\Securrency\SecurrencyTDS.IdentityService.Infrastructure\obj\Debug\netcoreapp3.1\SecurrencyTDS.IdentityService.Infrastructure.dll
+C:\Users\oluwa\source\repos\Securrency\SecurrencyTDS.IdentityService.Infrastructure\obj\Debug\netcoreapp3.1\SecurrencyTDS.IdentityService.Infrastructure.pdb
+C:\Users\oluwa\source\repos\Securrency\SecurrencyTDS.IdentityService.Infrastructure\obj\Debug\netcoreapp3.1\SecurrencyTDS.IdentityService.Infrastructure.csprojAssemblyReference.cache
+C:\Users\oluwa\source\repos\Securrency\SecurrencyTDS.IdentityService.Infrastructure\bin\Debug\netcoreapp3.1\SecurrencyTDS.Domain.dll
+C:\Users\oluwa\source\repos\Securrency\SecurrencyTDS.IdentityService.Infrastructure\bin\Debug\netcoreapp3.1\SecurrencyTDS.Domain.pdb
+C:\Users\oluwa\source\repos\Securrency\SecurrencyTDS.IdentityService.Infrastructure\obj\Debug\netcoreapp3.1\SecurrencyTDS.IdentityService.Infrastructure.csproj.CopyComplete

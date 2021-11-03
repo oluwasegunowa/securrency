@@ -1,0 +1,227 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Wallet.Application\\WalletManager.Application.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Domain\\SecurrencyTDS.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Domain\\SecurrencyTDS.Domain.csproj",
+        "projectName": "SecurrencyTDS.Domain",
+        "projectPath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Domain\\SecurrencyTDS.Domain.csproj",
+        "packagesPath": "C:\\Users\\oluwa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\oluwa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nidcomsolutions.pkgs.visualstudio.com/_packaging/nidcomsolutions/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "JWT": {
+              "target": "Package",
+              "version": "[5.3.1, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.20, )"
+            },
+            "NLog.Extensions.Logging": {
+              "target": "Package",
+              "version": "[1.7.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Wallet.Application\\WalletManager.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Wallet.Application\\WalletManager.Application.csproj",
+        "projectName": "WalletManager.Application",
+        "projectPath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Wallet.Application\\WalletManager.Application.csproj",
+        "packagesPath": "C:\\Users\\oluwa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Wallet.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\oluwa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nidcomsolutions.pkgs.visualstudio.com/_packaging/nidcomsolutions/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Domain\\SecurrencyTDS.Domain.csproj": {
+                "projectPath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Domain\\SecurrencyTDS.Domain.csproj"
+              },
+              "C:\\Users\\oluwa\\source\\repos\\Securrency\\Wallet.Infrastructure\\SecurrencyTDS.WalletManager.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Wallet.Infrastructure\\SecurrencyTDS.WalletManager.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\oluwa\\source\\repos\\Securrency\\Wallet.Infrastructure\\SecurrencyTDS.WalletManager.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Wallet.Infrastructure\\SecurrencyTDS.WalletManager.Infrastructure.csproj",
+        "projectName": "SecurrencyTDS.WalletManager.Infrastructure",
+        "projectPath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Wallet.Infrastructure\\SecurrencyTDS.WalletManager.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\oluwa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Wallet.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\oluwa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nidcomsolutions.pkgs.visualstudio.com/_packaging/nidcomsolutions/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Domain\\SecurrencyTDS.Domain.csproj": {
+                "projectPath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Domain\\SecurrencyTDS.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "stellar-dotnet-sdk": {
+              "target": "Package",
+              "version": "[7.2.14, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31019.35
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityService.API", "IdentityService\IdentityService.API.csproj", "{888D9530-AA4D-408E-A5AA-0BC7B3FE6A01}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F41E47F8-FF01-44C1-B759-8A62A3E31ABA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{4ACFC861-87D8-48C2-8176-F7F65581F913}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{80109FA0-DF84-4567-9C2E-4671BF888D39}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{850AB592-2C5F-4D17-BB2D-7A83BA856580}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{D8370BF8-7BB3-479A-B45E-98E474F20206}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalletService.API", "Securrency.Wallet\WalletService.API.csproj", "{8D458E00-A497-4C13-8656-4D0BDD1FD10F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurrencyTDS.Domain", "Securrency.Domain\SecurrencyTDS.Domain.csproj", "{54F18671-10BF-4036-89A9-273B272AB7A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurrencyTDS.WalletManager.Application", "Securrency.Wallet.Application\SecurrencyTDS.WalletManager.Application.csproj", "{2F515CAF-45C1-4BC3-B103-8BF859693160}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurrencyTD.Identity.Application", "Securrency.Identity.Application\SecurrencyTD.Identity.Application.csproj", "{F0B9212B-0A50-42BE-A136-2D00E7553BA4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{8D0B12C8-D230-4432-B654-ED6F6F9D9AE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurrencyTDS.WalletManager.Infrastructure", "Wallet.Infrastructure\SecurrencyTDS.WalletManager.Infrastructure.csproj", "{CBE12B4A-09AB-4D55-B8AE-4C82DF8F3D6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalletService.UnitTest", "WalletService.UnitTest\WalletService.UnitTest.csproj", "{786A465A-1280-40EC-AB9B-C6C8127E5FCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurrencyTDS.IdentityService.Infrastructure", "SecurrencyTDS.IdentityService.Infrastructure\SecurrencyTDS.IdentityService.Infrastructure.csproj", "{9F7F59C8-EFD0-4005-87BD-779E9D4761A2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{888D9530-AA4D-408E-A5AA-0BC7B3FE6A01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{888D9530-AA4D-408E-A5AA-0BC7B3FE6A01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{888D9530-AA4D-408E-A5AA-0BC7B3FE6A01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{888D9530-AA4D-408E-A5AA-0BC7B3FE6A01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D458E00-A497-4C13-8656-4D0BDD1FD10F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D458E00-A497-4C13-8656-4D0BDD1FD10F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D458E00-A497-4C13-8656-4D0BDD1FD10F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D458E00-A497-4C13-8656-4D0BDD1FD10F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54F18671-10BF-4036-89A9-273B272AB7A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54F18671-10BF-4036-89A9-273B272AB7A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54F18671-10BF-4036-89A9-273B272AB7A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54F18671-10BF-4036-89A9-273B272AB7A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F515CAF-45C1-4BC3-B103-8BF859693160}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F515CAF-45C1-4BC3-B103-8BF859693160}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F515CAF-45C1-4BC3-B103-8BF859693160}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F515CAF-45C1-4BC3-B103-8BF859693160}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0B9212B-0A50-42BE-A136-2D00E7553BA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0B9212B-0A50-42BE-A136-2D00E7553BA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0B9212B-0A50-42BE-A136-2D00E7553BA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0B9212B-0A50-42BE-A136-2D00E7553BA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBE12B4A-09AB-4D55-B8AE-4C82DF8F3D6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBE12B4A-09AB-4D55-B8AE-4C82DF8F3D6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBE12B4A-09AB-4D55-B8AE-4C82DF8F3D6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBE12B4A-09AB-4D55-B8AE-4C82DF8F3D6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{786A465A-1280-40EC-AB9B-C6C8127E5FCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{786A465A-1280-40EC-AB9B-C6C8127E5FCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{786A465A-1280-40EC-AB9B-C6C8127E5FCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{786A465A-1280-40EC-AB9B-C6C8127E5FCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F7F59C8-EFD0-4005-87BD-779E9D4761A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F7F59C8-EFD0-4005-87BD-779E9D4761A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F7F59C8-EFD0-4005-87BD-779E9D4761A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F7F59C8-EFD0-4005-87BD-779E9D4761A2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{888D9530-AA4D-408E-A5AA-0BC7B3FE6A01} = {D8370BF8-7BB3-479A-B45E-98E474F20206}
+		{80109FA0-DF84-4567-9C2E-4671BF888D39} = {8D0B12C8-D230-4432-B654-ED6F6F9D9AE1}
+		{850AB592-2C5F-4D17-BB2D-7A83BA856580} = {8D0B12C8-D230-4432-B654-ED6F6F9D9AE1}
+		{8D458E00-A497-4C13-8656-4D0BDD1FD10F} = {D8370BF8-7BB3-479A-B45E-98E474F20206}
+		{54F18671-10BF-4036-89A9-273B272AB7A2} = {80109FA0-DF84-4567-9C2E-4671BF888D39}
+		{2F515CAF-45C1-4BC3-B103-8BF859693160} = {4ACFC861-87D8-48C2-8176-F7F65581F913}
+		{F0B9212B-0A50-42BE-A136-2D00E7553BA4} = {4ACFC861-87D8-48C2-8176-F7F65581F913}
+		{CBE12B4A-09AB-4D55-B8AE-4C82DF8F3D6C} = {850AB592-2C5F-4D17-BB2D-7A83BA856580}
+		{786A465A-1280-40EC-AB9B-C6C8127E5FCC} = {F41E47F8-FF01-44C1-B759-8A62A3E31ABA}
+		{9F7F59C8-EFD0-4005-87BD-779E9D4761A2} = {850AB592-2C5F-4D17-BB2D-7A83BA856580}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B668A1AA-4983-4B39-AF9C-82065BFA39E1}
+	EndGlobalSection
+EndGlobal

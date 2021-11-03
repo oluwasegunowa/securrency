@@ -1,0 +1,8 @@
+C:\Users\oluwa\source\repos\Securrency\Securrency.Identity.Application\bin\Debug\netcoreapp3.1\Securrency.Identity.Application.deps.json
+C:\Users\oluwa\source\repos\Securrency\Securrency.Identity.Application\bin\Debug\netcoreapp3.1\Securrency.Identity.Application.dll
+C:\Users\oluwa\source\repos\Securrency\Securrency.Identity.Application\bin\Debug\netcoreapp3.1\Securrency.Identity.Application.pdb
+C:\Users\oluwa\source\repos\Securrency\Securrency.Identity.Application\obj\Debug\netcoreapp3.1\Securrency.Identity.Application.AssemblyInfoInputs.cache
+C:\Users\oluwa\source\repos\Securrency\Securrency.Identity.Application\obj\Debug\netcoreapp3.1\Securrency.Identity.Application.AssemblyInfo.cs
+C:\Users\oluwa\source\repos\Securrency\Securrency.Identity.Application\obj\Debug\netcoreapp3.1\Securrency.Identity.Application.csproj.CoreCompileInputs.cache
+C:\Users\oluwa\source\repos\Securrency\Securrency.Identity.Application\obj\Debug\netcoreapp3.1\Securrency.Identity.Application.dll
+C:\Users\oluwa\source\repos\Securrency\Securrency.Identity.Application\obj\Debug\netcoreapp3.1\Securrency.Identity.Application.pdb

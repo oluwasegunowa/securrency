@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\oluwa\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\oluwa\\.nuget\\packages"
+    ]
+  }
+}
