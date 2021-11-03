@@ -1,9 +1,0 @@
-C:\Users\oluwa\source\repos\Securrency\Securrency.Domain\bin\Debug\netcoreapp3.1\SecurrencyTDS.Domain.deps.json
-C:\Users\oluwa\source\repos\Securrency\Securrency.Domain\bin\Debug\netcoreapp3.1\SecurrencyTDS.Domain.dll
-C:\Users\oluwa\source\repos\Securrency\Securrency.Domain\bin\Debug\netcoreapp3.1\SecurrencyTDS.Domain.pdb
-C:\Users\oluwa\source\repos\Securrency\Securrency.Domain\obj\Debug\netcoreapp3.1\SecurrencyTDS.Domain.csprojAssemblyReference.cache
-C:\Users\oluwa\source\repos\Securrency\Securrency.Domain\obj\Debug\netcoreapp3.1\SecurrencyTDS.Domain.AssemblyInfoInputs.cache
-C:\Users\oluwa\source\repos\Securrency\Securrency.Domain\obj\Debug\netcoreapp3.1\SecurrencyTDS.Domain.AssemblyInfo.cs
-C:\Users\oluwa\source\repos\Securrency\Securrency.Domain\obj\Debug\netcoreapp3.1\SecurrencyTDS.Domain.csproj.CoreCompileInputs.cache
-C:\Users\oluwa\source\repos\Securrency\Securrency.Domain\obj\Debug\netcoreapp3.1\SecurrencyTDS.Domain.dll
-C:\Users\oluwa\source\repos\Securrency\Securrency.Domain\obj\Debug\netcoreapp3.1\SecurrencyTDS.Domain.pdb

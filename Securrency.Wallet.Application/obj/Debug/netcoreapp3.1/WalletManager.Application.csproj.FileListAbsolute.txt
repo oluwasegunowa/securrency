@@ -1,4 +1,0 @@
-C:\Users\oluwa\source\repos\Securrency\Securrency.Wallet.Application\obj\Debug\netcoreapp3.1\WalletManager.Application.csprojAssemblyReference.cache
-C:\Users\oluwa\source\repos\Securrency\Securrency.Wallet.Application\obj\Debug\netcoreapp3.1\WalletManager.Application.AssemblyInfoInputs.cache
-C:\Users\oluwa\source\repos\Securrency\Securrency.Wallet.Application\obj\Debug\netcoreapp3.1\WalletManager.Application.AssemblyInfo.cs
-C:\Users\oluwa\source\repos\Securrency\Securrency.Wallet.Application\obj\Debug\netcoreapp3.1\WalletManager.Application.csproj.CoreCompileInputs.cache
