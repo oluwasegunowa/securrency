@@ -56,9 +56,18 @@ https://github.com/stellar/go/blob/master/services/horizon/internal/docs/referen
 
 Running Migrations on the database
 --------------------------------------
+You may want to change the DBConnection string.
+
 dotnet ef migrations add Initial 
 dotnet ef database update
---dotnet ef migrations update--script -o upgrade-app.sql
+
+
+
+
+Running Test
+--------------------------------------
+dotnet test 
+
 
 
 
