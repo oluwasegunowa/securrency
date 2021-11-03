@@ -6,10 +6,10 @@ Transaction Discovery Service (TDS)
 
 Microservices
 -----------------------------------------------
-I was able to come up with 2 Mincro services;
+I was able to come up with 2 Micro services;
 
 1. Identity Service which handles the authentication of users of the API
-3. WalletManager.API -> This API handles uploading of wallet, tranasction discovery and retrieving of transactions.
+2.  WalletManager.API -> This API handles uploading of wallet, tranasction discovery and retrieving of transactions.
 
 For both documentation and testing of the API, I have configured Swagger documentation. You can also make use of Postman.
 
