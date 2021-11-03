@@ -50,10 +50,7 @@ namespace SecurrencyTDS. WalletManager.Infrastructure.Integrations
                             requestBuilder.Cursor(WalletLastCursor);
                         }
 
-                        //requestBuilder.Stream((obj,payment)=> {
-
-                        //    var ppp = payment?.CreatedAt;
-                        // });
+                      
 
 
                         var result = await requestBuilder.Execute();

@@ -8,6 +8,8 @@ namespace SecurrencyTDS.IdentityService.Infrastructure.Persistence
 {
     public class ApplicationDbContext : DbContext
     {
+        
+  public ApplicationDbContext() { }
         public ApplicationDbContext(DbContextOptions options) : base(options)
         {
         }

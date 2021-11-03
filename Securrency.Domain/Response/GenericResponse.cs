@@ -18,6 +18,7 @@ namespace Securrency.Domain.Response
       
         public bool IsSuccessful { get; set; }
         public T ResponseModel { get; set; }
-      
+
+        
     }
 }

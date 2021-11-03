@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalletService.UnitTest", "W
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurrencyTDS.IdentityService.Infrastructure", "SecurrencyTDS.IdentityService.Infrastructure\SecurrencyTDS.IdentityService.Infrastructure.csproj", "{9F7F59C8-EFD0-4005-87BD-779E9D4761A2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Identity.Application.Test", "Identity.Application.Test\Identity.Application.Test.csproj", "{4BB4F2E9-A307-4E44-968A-DB4655F561BD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{9F7F59C8-EFD0-4005-87BD-779E9D4761A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F7F59C8-EFD0-4005-87BD-779E9D4761A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F7F59C8-EFD0-4005-87BD-779E9D4761A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BB4F2E9-A307-4E44-968A-DB4655F561BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BB4F2E9-A307-4E44-968A-DB4655F561BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BB4F2E9-A307-4E44-968A-DB4655F561BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BB4F2E9-A307-4E44-968A-DB4655F561BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -84,6 +90,7 @@ Global
 		{CBE12B4A-09AB-4D55-B8AE-4C82DF8F3D6C} = {850AB592-2C5F-4D17-BB2D-7A83BA856580}
 		{786A465A-1280-40EC-AB9B-C6C8127E5FCC} = {F41E47F8-FF01-44C1-B759-8A62A3E31ABA}
 		{9F7F59C8-EFD0-4005-87BD-779E9D4761A2} = {850AB592-2C5F-4D17-BB2D-7A83BA856580}
+		{4BB4F2E9-A307-4E44-968A-DB4655F561BD} = {F41E47F8-FF01-44C1-B759-8A62A3E31ABA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B668A1AA-4983-4B39-AF9C-82065BFA39E1}
