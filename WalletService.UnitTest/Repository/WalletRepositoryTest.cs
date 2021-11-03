@@ -51,7 +51,7 @@ namespace WalletService.Application.Test
         {
             // Arrange
 
-            var _dbSetMock = CreateDbSetMock(GetWalletListOfMovies());
+            var _dbSetMock = CreateDbSetMock(GetWalletList());
 
             var context = new Mock<ApplicationDbContext>();
             _context.Setup(x => x.Set<Wallet>()).Returns(_dbSetMock.Object);
@@ -72,7 +72,7 @@ namespace WalletService.Application.Test
         {
 
 
-            var _dbSetMock = CreateDbSetMock(GetWalletListOfMovies());
+            var _dbSetMock = CreateDbSetMock(GetWalletList());
             var context = new Mock<ApplicationDbContext>();
             _context.Setup(x => x.Set<Wallet>()).Returns(_dbSetMock.Object);
 
@@ -88,7 +88,7 @@ namespace WalletService.Application.Test
         {
 
 
-            var _dbSetMock = CreateDbSetMock(GetWalletListOfMovies());
+            var _dbSetMock = CreateDbSetMock(GetWalletList());
             var context = new Mock<ApplicationDbContext>();
             _context.Setup(x => x.Set<Wallet>()).Returns(_dbSetMock.Object);
 
@@ -111,7 +111,7 @@ namespace WalletService.Application.Test
             return _dbSetMock;
         }
 
-        private IEnumerable<Wallet> GetWalletListOfMovies()
+        private IEnumerable<Wallet> GetWalletList()
         {
             var retList = new List<Wallet>
         {
