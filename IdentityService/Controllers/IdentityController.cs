@@ -12,6 +12,9 @@ using Securrency.Identity.Application.Command;
 
 namespace IdentityService.Controllers
 {
+    /// <summary>
+    /// This controller manages the generation of authentication token after a successful login.
+    /// </summary>
     [ApiController]
     [Route("[controller]")]
     public class IdentityController : ControllerBase
