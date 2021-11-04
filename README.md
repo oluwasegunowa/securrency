@@ -31,7 +31,7 @@ Application Layer
 1. Backrgound service(TransactionDiscoveryHostedService) was developed using dotnet core hosted sesrvice. To avoid multiple execution when there is an ongoing execution, this was combined with a time 
 2. Application logic using CQRS(Commands for the upload of wallet and query for the fetching of data). CQRS was used to ensure Single Responsibilty principle where one class is meant to have one responsibilty.
 
-I tested with the following, as the test wallet were not working. No tranasction was also returned for this
+I tested with the following WalletAddress, as the test wallet were not working.
 "GC2BKLYOOYPDEFJKLKY6FNNRQMGFLVHJKQRGNSSRRGSMPGF32LHCQVGF"
 
 Domain Layer
@@ -56,9 +56,18 @@ https://github.com/stellar/go/blob/master/services/horizon/internal/docs/referen
 
 Running Migrations on the database
 --------------------------------------
+You may want to change the DBConnection string.
+
 dotnet ef migrations add Initial 
 dotnet ef database update
---dotnet ef migrations update--script -o upgrade-app.sql
+
+
+
+
+Running Test
+--------------------------------------
+dotnet test 
+
 
 
 
