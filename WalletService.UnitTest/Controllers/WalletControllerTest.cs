@@ -90,8 +90,7 @@ namespace WalletService.Application.Test.Controllers
                 {
 
                     UploadEntriesCount = 4,
-                    SuccessfulUpload = 3,
-                    DuplicateEntries = 1
+                    DuplicateEntriesCount = 1
                 }
             };
         }

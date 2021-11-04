@@ -35,14 +35,17 @@ namespace SecurrencyTDS.WalletManager.Application.Handlers
                 return new GenericResponse<UploadWalletResponse>() { IsSuccessful=false, Message="Wallet address data is empty. You must upload atleast one address." };
             }
 
-
+            var uploadresponse = new UploadWalletResponse()
+            {
+                UploadEntriesCount = request.WalletAddressModels.Count
+            };
             foreach (var wallet in request.WalletAddressModels)
             {
                 var existingWallet = (await _unitOfWork.WalletRepository.Find(f => f.Address == wallet.Address)).FirstOrDefault();
                 if (existingWallet != null)
                 {
+                    uploadresponse.DuplicateEntriesCount++;
                     continue;
-                 //   return new GenericResponse<UploadWalletResponse>() { IsSuccessful = false, Message = $"A wallet with the same address: '{existingWallet.Address} 'already exist. Please check the data and try again." };
                 }
 
                 Wallet newwaller = new Wallet()
