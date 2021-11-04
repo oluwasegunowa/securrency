@@ -10,7 +10,7 @@ namespace Securrency.Domain.Response
         /// <summary>
         /// This is used to return application defined codes to callers where necessary
         /// </summary>
-        public string StatusCode { get; set; }
+        internal string StatusCode { get; set; }
     }
 
   public  class GenericResponse<T>: BaseResponse

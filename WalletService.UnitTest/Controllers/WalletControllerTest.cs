@@ -8,7 +8,10 @@ using Securrency.Wallet.Controllers;
 using SecurrencyTDS.WalletManager.Application.Command;
 using SecurrencyTDS.WalletManager.Application.Requests;
 using SecurrencyTDS.WalletManager.Application.Response;
+using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Xunit;
@@ -63,6 +66,54 @@ namespace WalletService.Application.Test.Controllers
         }
 
 
+
+        [Fact]
+        public async Task AddressExportAddressNotFound__ShouldReturnBadObjectResultAsync()
+        {
+            //Arrange
+            var _mediatorMock = new Mock<IMediator>();
+            _mediatorMock.Setup(m => m.Send(It.IsAny<WalletTransactionsQuery>(), It.IsAny<CancellationToken>())).ReturnsAsync(
+                await GetFakeStreamDataAsync(inValid:true)
+                );
+            var logger = Mock.Of<ILogger<WalletController>>();
+
+            var controller = new WalletController(logger, _mediatorMock.Object);
+
+            //Act
+            var result = await controller.WalletTransactionsQueryExport(new WalletTransactionsQuery()
+            { WalletAddress = "" });
+
+            //Assert
+            var badObjectResult = Assert.IsType<BadRequestObjectResult>(result);
+            var returnValue = Assert.IsType<BaseResponse>(badObjectResult.Value);
+            Assert.NotEmpty(returnValue.Message);
+        }
+
+
+        [Fact]
+        public async Task AddressForExportIsValid_ShouldReturnStreamAsync()
+        {
+            //Arrange
+            var _mediatorMock = new Mock<IMediator>();
+            _mediatorMock.Setup(m => m.Send(It.IsAny<WalletTransactionsQuery>(), It.IsAny<CancellationToken>())).ReturnsAsync(
+                await GetFakeStreamDataAsync()
+                );
+            var logger = Mock.Of<ILogger<WalletController>>();
+
+            var controller = new WalletController(logger, _mediatorMock.Object);
+
+            //Act
+            var result = await controller.WalletTransactionsQueryExport(new WalletTransactionsQuery() 
+            {  WalletAddress = "" });
+
+            //Assert
+            var fileResult = Assert.IsType<FileStreamResult>(result);
+            Assert.NotNull(fileResult.FileStream);
+           
+        }
+
+
+
         private List<WalletAddressModel> AddressListFakeData {
 
             get {
@@ -77,6 +128,33 @@ namespace WalletService.Application.Test.Controllers
             }
             
         
+        }
+
+
+        private async Task<GenericResponse<MemoryStream>> GetFakeStreamDataAsync(bool inValid=false)
+        {
+            if (inValid) return new GenericResponse<MemoryStream>() {IsSuccessful=false, Message="The selected address does not exist." };
+            var stream = new MemoryStream();
+            using (var streamWriter = new StreamWriter(stream, leaveOpen: true))
+            {
+                await streamWriter.WriteLineAsync(
+                $"Wallet, Amount"
+              );
+                foreach (var p in AddressListFakeData.Select(s=>new { Wallet=s.Address, Amount=(new Random()).Next(100,9000) }))
+                {
+                    await streamWriter.WriteLineAsync(
+                      $"{p.Wallet}, {p.Amount}"
+                    );
+                    await streamWriter.FlushAsync();
+                }
+            }
+
+            return new GenericResponse<MemoryStream>()
+            {
+                IsSuccessful = true,
+                Message = "Wallet addresses uploaded.",
+                ResponseModel = stream
+            };
         }
 
 
