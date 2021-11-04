@@ -15,13 +15,20 @@ For both documentation and testing of the API, I have configured Swagger documen
 
 Two users were created (admin1 and admin2 with password TDSAdmin12345) for test purposes.
 Authorization: Bearer {token}
+
+
+
+Find below architecture, design patterns and tools used in the development;
  
-Clean Architecture
-Reposiotry Pattern
-CQRS - MediatR
-JWT - Authorization
-Swagger - Documentation
-NLog - Logging
+1. Clean Architecture
+2. Reposiotry Pattern
+3. CQRS - MediatR
+4. JWT - Authorization
+5. Swagger - Documentation
+6. NLog - Logging
+7. MSSSQL Server Database
+8. xUnit for Unit Testing
+9. Moq for Mocking unit test data
 
 
 
