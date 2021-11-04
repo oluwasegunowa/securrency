@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "r8qP0iotABI5HERJSG8+gXV3gmUtD/meAnfOMHYR2eWN7fD3SL3FH8nmeqZxOwqPzJNFMOH2mKL4STv1PksZ+Q==",
+  "dgSpecHash": "uR/luzQIRcqnN+1dTC3KERI94K3PF438AXYM6hCS8njj8kKKb68xBa1NpZvVIHqscxKnEy0fu30W7FMPKDiJMQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Domain\\SecurrencyTDS.Domain.csproj",
+  "projectFilePath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Domain\\TDS.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\oluwa\\.nuget\\packages\\jwt\\5.3.1\\jwt.5.3.1.nupkg.sha512",
     "C:\\Users\\oluwa\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.20\\microsoft.aspnetcore.authentication.jwtbearer.3.1.20.nupkg.sha512",

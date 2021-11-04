@@ -2773,12 +2773,12 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.11",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.10.9",
           "NLog.Extensions.Logging": "1.7.4",
-          "SecurrencyTD.Identity.Application": "1.0.0",
-          "SecurrencyTDS.Domain": "1.0.0",
           "Swashbuckle.AspNetCore": "5.0.0-rc5",
           "Swashbuckle.AspNetCore.Swagger": "5.0.0-rc5",
           "Swashbuckle.AspNetCore.SwaggerGen": "5.0.0-rc5",
-          "Swashbuckle.AspNetCore.SwaggerUi": "5.0.0-rc5"
+          "Swashbuckle.AspNetCore.SwaggerUi": "5.0.0-rc5",
+          "TDS.Domain": "1.0.0",
+          "TDS.Identity.Application": "1.0.0"
         },
         "compile": {
           "bin/placeholder/IdentityService.API.dll": {}
@@ -2790,23 +2790,7 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "SecurrencyTD.Identity.Application/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "MediatR": "9.0.0",
-          "MediatR.Extensions.Microsoft.DependencyInjection": "9.0.0",
-          "SecurrencyTDS.Domain": "1.0.0",
-          "SecurrencyTDS.IdentityService.Infrastructure": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/SecurrencyTD.Identity.Application.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/SecurrencyTD.Identity.Application.dll": {}
-        }
-      },
-      "SecurrencyTDS.Domain/1.0.0": {
+      "TDS.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
@@ -2815,29 +2799,45 @@
           "NLog.Extensions.Logging": "1.7.4"
         },
         "compile": {
-          "bin/placeholder/SecurrencyTDS.Domain.dll": {}
+          "bin/placeholder/TDS.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/SecurrencyTDS.Domain.dll": {}
+          "bin/placeholder/TDS.Domain.dll": {}
         },
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
       },
-      "SecurrencyTDS.IdentityService.Infrastructure/1.0.0": {
+      "TDS.Identity.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "MediatR": "9.0.0",
+          "MediatR.Extensions.Microsoft.DependencyInjection": "9.0.0",
+          "TDS.Domain": "1.0.0",
+          "TDS.IdentityService.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TDS.Identity.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TDS.Identity.Application.dll": {}
+        }
+      },
+      "TDS.IdentityService.Infrastructure/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "5.0.11",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.11",
-          "SecurrencyTDS.Domain": "1.0.0",
+          "TDS.Domain": "1.0.0",
           "stellar-dotnet-sdk": "7.2.14"
         },
         "compile": {
-          "bin/placeholder/SecurrencyTDS.IdentityService.Infrastructure.dll": {}
+          "bin/placeholder/TDS.IdentityService.Infrastructure.dll": {}
         },
         "runtime": {
-          "bin/placeholder/SecurrencyTDS.IdentityService.Infrastructure.dll": {}
+          "bin/placeholder/TDS.IdentityService.Infrastructure.dll": {}
         }
       }
     }
@@ -9059,20 +9059,20 @@
       "path": "../IdentityService/IdentityService.API.csproj",
       "msbuildProject": "../IdentityService/IdentityService.API.csproj"
     },
-    "SecurrencyTD.Identity.Application/1.0.0": {
+    "TDS.Domain/1.0.0": {
       "type": "project",
-      "path": "../Securrency.Identity.Application/SecurrencyTD.Identity.Application.csproj",
-      "msbuildProject": "../Securrency.Identity.Application/SecurrencyTD.Identity.Application.csproj"
+      "path": "../Securrency.Domain/TDS.Domain.csproj",
+      "msbuildProject": "../Securrency.Domain/TDS.Domain.csproj"
     },
-    "SecurrencyTDS.Domain/1.0.0": {
+    "TDS.Identity.Application/1.0.0": {
       "type": "project",
-      "path": "../Securrency.Domain/SecurrencyTDS.Domain.csproj",
-      "msbuildProject": "../Securrency.Domain/SecurrencyTDS.Domain.csproj"
+      "path": "../Securrency.Identity.Application/TDS.Identity.Application.csproj",
+      "msbuildProject": "../Securrency.Identity.Application/TDS.Identity.Application.csproj"
     },
-    "SecurrencyTDS.IdentityService.Infrastructure/1.0.0": {
+    "TDS.IdentityService.Infrastructure/1.0.0": {
       "type": "project",
-      "path": "../SecurrencyTDS.IdentityService.Infrastructure/SecurrencyTDS.IdentityService.Infrastructure.csproj",
-      "msbuildProject": "../SecurrencyTDS.IdentityService.Infrastructure/SecurrencyTDS.IdentityService.Infrastructure.csproj"
+      "path": "../SecurrencyTDS.IdentityService.Infrastructure/TDS.IdentityService.Infrastructure.csproj",
+      "msbuildProject": "../SecurrencyTDS.IdentityService.Infrastructure/TDS.IdentityService.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -9080,8 +9080,8 @@
       "IdentityService.API >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 16.7.1",
       "Moq >= 4.16.1",
-      "SecurrencyTD.Identity.Application >= 1.0.0",
-      "SecurrencyTDS.Domain >= 1.0.0",
+      "TDS.Domain >= 1.0.0",
+      "TDS.Identity.Application >= 1.0.0",
       "coverlet.collector >= 1.3.0",
       "xunit >= 2.4.1",
       "xunit.runner.visualstudio >= 2.4.3"
@@ -9093,9 +9093,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Identity.Application.Test\\Identity.Application.Test.csproj",
-      "projectName": "Identity.Application.Test",
-      "projectPath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Identity.Application.Test\\Identity.Application.Test.csproj",
+      "projectUniqueName": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Identity.Application.Test\\TDS.IdentityService.UnitTest.csproj",
+      "projectName": "TDS.IdentityService.UnitTest",
+      "projectPath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Identity.Application.Test\\TDS.IdentityService.UnitTest.csproj",
       "packagesPath": "C:\\Users\\oluwa\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Identity.Application.Test\\obj\\",
       "projectStyle": "PackageReference",
@@ -9118,11 +9118,11 @@
             "C:\\Users\\oluwa\\source\\repos\\Securrency\\IdentityService\\IdentityService.API.csproj": {
               "projectPath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\IdentityService\\IdentityService.API.csproj"
             },
-            "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Domain\\SecurrencyTDS.Domain.csproj": {
-              "projectPath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Domain\\SecurrencyTDS.Domain.csproj"
+            "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Domain\\TDS.Domain.csproj": {
+              "projectPath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Domain\\TDS.Domain.csproj"
             },
-            "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Identity.Application\\SecurrencyTD.Identity.Application.csproj": {
-              "projectPath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Identity.Application\\SecurrencyTD.Identity.Application.csproj"
+            "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Identity.Application\\TDS.Identity.Application.csproj": {
+              "projectPath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Identity.Application\\TDS.Identity.Application.csproj"
             }
           }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0XjEWbGqKWWiWN2Vh7NdDfhYjT0WyiEu2vrovE5otydJrAwcg9bMD1O00+hk2j6IUaFpTMUxpvYh+UimyTqH6Q==",
+  "dgSpecHash": "lnbxANzNgL8e57TwylYVy4Pp2hASOMm58I7J0ERYxACZ71YprBi3Yg7do9HL4QJQWc3kbHro20RNpwcCwjY9jg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\SecurrencyTDS.IdentityService.Infrastructure\\SecurrencyTDS.IdentityService.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\SecurrencyTDS.IdentityService.Infrastructure\\TDS.IdentityService.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\oluwa\\.nuget\\packages\\common.logging\\3.4.1\\common.logging.3.4.1.nupkg.sha512",
     "C:\\Users\\oluwa\\.nuget\\packages\\common.logging.core\\3.4.1\\common.logging.core.3.4.1.nupkg.sha512",

@@ -31,8 +31,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Securrency.Domain\SecurrencyTDS.Domain.csproj" />
-    <ProjectReference Include="..\Securrency.Identity.Application\SecurrencyTD.Identity.Application.csproj" />
+    <ProjectReference Include="..\Securrency.Domain\TDS.Domain.csproj" />
+    <ProjectReference Include="..\Securrency.Identity.Application\TDS.Identity.Application.csproj" />
   </ItemGroup>
   
 </Project>

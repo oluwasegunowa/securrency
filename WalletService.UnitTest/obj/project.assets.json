@@ -2764,7 +2764,7 @@
           "build/netcoreapp2.1/xunit.runner.visualstudio.props": {}
         }
       },
-      "SecurrencyTDS.Domain/1.0.0": {
+      "TDS.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
@@ -2773,45 +2773,45 @@
           "NLog.Extensions.Logging": "1.7.4"
         },
         "compile": {
-          "bin/placeholder/SecurrencyTDS.Domain.dll": {}
+          "bin/placeholder/TDS.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/SecurrencyTDS.Domain.dll": {}
+          "bin/placeholder/TDS.Domain.dll": {}
         },
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
       },
-      "SecurrencyTDS.WalletManager.Application/1.0.0": {
+      "TDS.WalletService.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "MediatR": "9.0.0",
           "MediatR.Extensions.Microsoft.DependencyInjection": "9.0.0",
-          "SecurrencyTDS.Domain": "1.0.0",
-          "SecurrencyTDS.WalletManager.Infrastructure": "1.0.0"
+          "TDS.Domain": "1.0.0",
+          "TDS.WalletService.Infrastructure": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/SecurrencyTDS.WalletManager.Application.dll": {}
+          "bin/placeholder/TDS.WalletService.Application.dll": {}
         },
         "runtime": {
-          "bin/placeholder/SecurrencyTDS.WalletManager.Application.dll": {}
+          "bin/placeholder/TDS.WalletService.Application.dll": {}
         }
       },
-      "SecurrencyTDS.WalletManager.Infrastructure/1.0.0": {
+      "TDS.WalletService.Infrastructure/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "5.0.11",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.11",
-          "SecurrencyTDS.Domain": "1.0.0",
+          "TDS.Domain": "1.0.0",
           "stellar-dotnet-sdk": "7.2.14"
         },
         "compile": {
-          "bin/placeholder/SecurrencyTDS.WalletManager.Infrastructure.dll": {}
+          "bin/placeholder/TDS.WalletService.Infrastructure.dll": {}
         },
         "runtime": {
-          "bin/placeholder/SecurrencyTDS.WalletManager.Infrastructure.dll": {}
+          "bin/placeholder/TDS.WalletService.Infrastructure.dll": {}
         }
       },
       "WalletService.API/1.0.0": {
@@ -2821,13 +2821,13 @@
           "MediatR": "9.0.0",
           "MediatR.Extensions.Microsoft.DependencyInjection": "9.0.0",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.10.9",
-          "SecurrencyTDS.Domain": "1.0.0",
-          "SecurrencyTDS.WalletManager.Application": "1.0.0",
-          "SecurrencyTDS.WalletManager.Infrastructure": "1.0.0",
           "Swashbuckle.AspNetCore": "5.0.0-rc5",
           "Swashbuckle.AspNetCore.Swagger": "5.0.0-rc5",
           "Swashbuckle.AspNetCore.SwaggerGen": "5.0.0-rc5",
-          "Swashbuckle.AspNetCore.SwaggerUi": "5.0.0-rc5"
+          "Swashbuckle.AspNetCore.SwaggerUi": "5.0.0-rc5",
+          "TDS.Domain": "1.0.0",
+          "TDS.WalletService.Application": "1.0.0",
+          "TDS.WalletService.Infrastructure": "1.0.0"
         },
         "compile": {
           "bin/placeholder/WalletService.API.dll": {}
@@ -9053,20 +9053,20 @@
         "xunit.runner.visualstudio.nuspec"
       ]
     },
-    "SecurrencyTDS.Domain/1.0.0": {
+    "TDS.Domain/1.0.0": {
       "type": "project",
-      "path": "../Securrency.Domain/SecurrencyTDS.Domain.csproj",
-      "msbuildProject": "../Securrency.Domain/SecurrencyTDS.Domain.csproj"
+      "path": "../Securrency.Domain/TDS.Domain.csproj",
+      "msbuildProject": "../Securrency.Domain/TDS.Domain.csproj"
     },
-    "SecurrencyTDS.WalletManager.Application/1.0.0": {
+    "TDS.WalletService.Application/1.0.0": {
       "type": "project",
-      "path": "../Securrency.Wallet.Application/SecurrencyTDS.WalletManager.Application.csproj",
-      "msbuildProject": "../Securrency.Wallet.Application/SecurrencyTDS.WalletManager.Application.csproj"
+      "path": "../Securrency.Wallet.Application/TDS.WalletService.Application.csproj",
+      "msbuildProject": "../Securrency.Wallet.Application/TDS.WalletService.Application.csproj"
     },
-    "SecurrencyTDS.WalletManager.Infrastructure/1.0.0": {
+    "TDS.WalletService.Infrastructure/1.0.0": {
       "type": "project",
-      "path": "../Wallet.Infrastructure/SecurrencyTDS.WalletManager.Infrastructure.csproj",
-      "msbuildProject": "../Wallet.Infrastructure/SecurrencyTDS.WalletManager.Infrastructure.csproj"
+      "path": "../Wallet.Infrastructure/TDS.WalletService.Infrastructure.csproj",
+      "msbuildProject": "../Wallet.Infrastructure/TDS.WalletService.Infrastructure.csproj"
     },
     "WalletService.API/1.0.0": {
       "type": "project",
@@ -9078,8 +9078,8 @@
     ".NETCoreApp,Version=v3.1": [
       "Microsoft.NET.Test.Sdk >= 16.7.1",
       "Moq >= 4.16.1",
-      "SecurrencyTDS.Domain >= 1.0.0",
-      "SecurrencyTDS.WalletManager.Infrastructure >= 1.0.0",
+      "TDS.Domain >= 1.0.0",
+      "TDS.WalletService.Infrastructure >= 1.0.0",
       "WalletService.API >= 1.0.0",
       "coverlet.collector >= 1.3.0",
       "xunit >= 2.4.1",
@@ -9092,9 +9092,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\oluwa\\source\\repos\\Securrency\\WalletService.UnitTest\\WalletService.UnitTest.csproj",
-      "projectName": "WalletService.UnitTest",
-      "projectPath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\WalletService.UnitTest\\WalletService.UnitTest.csproj",
+      "projectUniqueName": "C:\\Users\\oluwa\\source\\repos\\Securrency\\WalletService.UnitTest\\TDS.WalletService.UnitTest.csproj",
+      "projectName": "TDS.WalletService.UnitTest",
+      "projectPath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\WalletService.UnitTest\\TDS.WalletService.UnitTest.csproj",
       "packagesPath": "C:\\Users\\oluwa\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\WalletService.UnitTest\\obj\\",
       "projectStyle": "PackageReference",
@@ -9114,14 +9114,14 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Domain\\SecurrencyTDS.Domain.csproj": {
-              "projectPath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Domain\\SecurrencyTDS.Domain.csproj"
+            "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Domain\\TDS.Domain.csproj": {
+              "projectPath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Domain\\TDS.Domain.csproj"
             },
             "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Wallet\\WalletService.API.csproj": {
               "projectPath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Wallet\\WalletService.API.csproj"
             },
-            "C:\\Users\\oluwa\\source\\repos\\Securrency\\Wallet.Infrastructure\\SecurrencyTDS.WalletManager.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Wallet.Infrastructure\\SecurrencyTDS.WalletManager.Infrastructure.csproj"
+            "C:\\Users\\oluwa\\source\\repos\\Securrency\\Wallet.Infrastructure\\TDS.WalletService.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Wallet.Infrastructure\\TDS.WalletService.Infrastructure.csproj"
             }
           }
         }

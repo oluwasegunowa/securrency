@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LQHVlROUnk52dYG957wjcHbeACq0Kws2m/RldqMkX6EyHNU8pHLNSaE6yC12svQwRqgZ8D5LOvPlMDqNps/Mzg==",
+  "dgSpecHash": "9682Mg4w32Hf/NqM7EtWmVIEIz6lIzv2BJ9NsFSP+aBIOQQjadkB/4KkM/SNm1cLBMqHPh0YoFQitKe/TweEpA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\WalletService.UnitTest\\WalletService.UnitTest.csproj",
+  "projectFilePath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\WalletService.UnitTest\\TDS.WalletService.UnitTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\oluwa\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\oluwa\\.nuget\\packages\\common.logging\\3.4.1\\common.logging.3.4.1.nupkg.sha512",

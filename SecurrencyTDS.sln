@@ -17,21 +17,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalletService.API", "Securrency.Wallet\WalletService.API.csproj", "{8D458E00-A497-4C13-8656-4D0BDD1FD10F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurrencyTDS.Domain", "Securrency.Domain\SecurrencyTDS.Domain.csproj", "{54F18671-10BF-4036-89A9-273B272AB7A2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDS.Domain", "Securrency.Domain\TDS.Domain.csproj", "{54F18671-10BF-4036-89A9-273B272AB7A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurrencyTDS.WalletManager.Application", "Securrency.Wallet.Application\SecurrencyTDS.WalletManager.Application.csproj", "{2F515CAF-45C1-4BC3-B103-8BF859693160}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDS.WalletService.Application", "Securrency.Wallet.Application\TDS.WalletService.Application.csproj", "{2F515CAF-45C1-4BC3-B103-8BF859693160}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurrencyTD.Identity.Application", "Securrency.Identity.Application\SecurrencyTD.Identity.Application.csproj", "{F0B9212B-0A50-42BE-A136-2D00E7553BA4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDS.Identity.Application", "Securrency.Identity.Application\TDS.Identity.Application.csproj", "{F0B9212B-0A50-42BE-A136-2D00E7553BA4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{8D0B12C8-D230-4432-B654-ED6F6F9D9AE1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurrencyTDS.WalletManager.Infrastructure", "Wallet.Infrastructure\SecurrencyTDS.WalletManager.Infrastructure.csproj", "{CBE12B4A-09AB-4D55-B8AE-4C82DF8F3D6C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDS.WalletService.Infrastructure", "Wallet.Infrastructure\TDS.WalletService.Infrastructure.csproj", "{CBE12B4A-09AB-4D55-B8AE-4C82DF8F3D6C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalletService.UnitTest", "WalletService.UnitTest\WalletService.UnitTest.csproj", "{786A465A-1280-40EC-AB9B-C6C8127E5FCC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDS.WalletService.UnitTest", "WalletService.UnitTest\TDS.WalletService.UnitTest.csproj", "{786A465A-1280-40EC-AB9B-C6C8127E5FCC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurrencyTDS.IdentityService.Infrastructure", "SecurrencyTDS.IdentityService.Infrastructure\SecurrencyTDS.IdentityService.Infrastructure.csproj", "{9F7F59C8-EFD0-4005-87BD-779E9D4761A2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDS.IdentityService.Infrastructure", "SecurrencyTDS.IdentityService.Infrastructure\TDS.IdentityService.Infrastructure.csproj", "{9F7F59C8-EFD0-4005-87BD-779E9D4761A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Identity.Application.Test", "Identity.Application.Test\Identity.Application.Test.csproj", "{4BB4F2E9-A307-4E44-968A-DB4655F561BD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDS.IdentityService.UnitTest", "Identity.Application.Test\TDS.IdentityService.UnitTest.csproj", "{4BB4F2E9-A307-4E44-968A-DB4655F561BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

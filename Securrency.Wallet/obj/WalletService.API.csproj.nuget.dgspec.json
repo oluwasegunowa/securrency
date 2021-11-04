@@ -4,12 +4,12 @@
     "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Wallet\\WalletService.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Domain\\SecurrencyTDS.Domain.csproj": {
+    "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Domain\\TDS.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Domain\\SecurrencyTDS.Domain.csproj",
-        "projectName": "SecurrencyTDS.Domain",
-        "projectPath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Domain\\SecurrencyTDS.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Domain\\TDS.Domain.csproj",
+        "projectName": "TDS.Domain",
+        "projectPath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Domain\\TDS.Domain.csproj",
         "packagesPath": "C:\\Users\\oluwa\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Domain\\obj\\",
         "projectStyle": "PackageReference",
@@ -76,12 +76,12 @@
         }
       }
     },
-    "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Wallet.Application\\SecurrencyTDS.WalletManager.Application.csproj": {
+    "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Wallet.Application\\TDS.WalletService.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Wallet.Application\\SecurrencyTDS.WalletManager.Application.csproj",
-        "projectName": "SecurrencyTDS.WalletManager.Application",
-        "projectPath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Wallet.Application\\SecurrencyTDS.WalletManager.Application.csproj",
+        "projectUniqueName": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Wallet.Application\\TDS.WalletService.Application.csproj",
+        "projectName": "TDS.WalletService.Application",
+        "projectPath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Wallet.Application\\TDS.WalletService.Application.csproj",
         "packagesPath": "C:\\Users\\oluwa\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Wallet.Application\\obj\\",
         "projectStyle": "PackageReference",
@@ -101,11 +101,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Domain\\SecurrencyTDS.Domain.csproj": {
-                "projectPath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Domain\\SecurrencyTDS.Domain.csproj"
+              "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Domain\\TDS.Domain.csproj": {
+                "projectPath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Domain\\TDS.Domain.csproj"
               },
-              "C:\\Users\\oluwa\\source\\repos\\Securrency\\Wallet.Infrastructure\\SecurrencyTDS.WalletManager.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Wallet.Infrastructure\\SecurrencyTDS.WalletManager.Infrastructure.csproj"
+              "C:\\Users\\oluwa\\source\\repos\\Securrency\\Wallet.Infrastructure\\TDS.WalletService.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Wallet.Infrastructure\\TDS.WalletService.Infrastructure.csproj"
               }
             }
           }
@@ -173,14 +173,14 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Domain\\SecurrencyTDS.Domain.csproj": {
-                "projectPath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Domain\\SecurrencyTDS.Domain.csproj"
+              "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Domain\\TDS.Domain.csproj": {
+                "projectPath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Domain\\TDS.Domain.csproj"
               },
-              "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Wallet.Application\\SecurrencyTDS.WalletManager.Application.csproj": {
-                "projectPath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Wallet.Application\\SecurrencyTDS.WalletManager.Application.csproj"
+              "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Wallet.Application\\TDS.WalletService.Application.csproj": {
+                "projectPath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Wallet.Application\\TDS.WalletService.Application.csproj"
               },
-              "C:\\Users\\oluwa\\source\\repos\\Securrency\\Wallet.Infrastructure\\SecurrencyTDS.WalletManager.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Wallet.Infrastructure\\SecurrencyTDS.WalletManager.Infrastructure.csproj"
+              "C:\\Users\\oluwa\\source\\repos\\Securrency\\Wallet.Infrastructure\\TDS.WalletService.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Wallet.Infrastructure\\TDS.WalletService.Infrastructure.csproj"
               }
             }
           }
@@ -252,12 +252,12 @@
         }
       }
     },
-    "C:\\Users\\oluwa\\source\\repos\\Securrency\\Wallet.Infrastructure\\SecurrencyTDS.WalletManager.Infrastructure.csproj": {
+    "C:\\Users\\oluwa\\source\\repos\\Securrency\\Wallet.Infrastructure\\TDS.WalletService.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Wallet.Infrastructure\\SecurrencyTDS.WalletManager.Infrastructure.csproj",
-        "projectName": "SecurrencyTDS.WalletManager.Infrastructure",
-        "projectPath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Wallet.Infrastructure\\SecurrencyTDS.WalletManager.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Wallet.Infrastructure\\TDS.WalletService.Infrastructure.csproj",
+        "projectName": "TDS.WalletService.Infrastructure",
+        "projectPath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Wallet.Infrastructure\\TDS.WalletService.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\oluwa\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Wallet.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
@@ -277,8 +277,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Domain\\SecurrencyTDS.Domain.csproj": {
-                "projectPath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Domain\\SecurrencyTDS.Domain.csproj"
+              "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Domain\\TDS.Domain.csproj": {
+                "projectPath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Securrency.Domain\\TDS.Domain.csproj"
               }
             }
           }

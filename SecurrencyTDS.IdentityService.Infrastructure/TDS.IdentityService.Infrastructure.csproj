@@ -9,7 +9,7 @@
 
 
   <ItemGroup>
-    <ProjectReference Include="..\Securrency.Domain\SecurrencyTDS.Domain.csproj" />
+    <ProjectReference Include="..\Securrency.Domain\TDS.Domain.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

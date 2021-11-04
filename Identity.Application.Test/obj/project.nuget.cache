@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yDqBoXKyQZKUOmrgW1UCCdAUmQ2BSQCAVunEMQz4sFZMrZ6XFZQ4E3fSfNsHd7pf7akYVjQKKhbbqmop2rvQqg==",
+  "dgSpecHash": "+Lbp6lIxmLdg83wH794O0lqsaIDpGwXIGdyieO2AWOc6cYFyHwN+C++IewmEitpR+ujH12N1LawIjIhAn/lQog==",
   "success": true,
-  "projectFilePath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Identity.Application.Test\\Identity.Application.Test.csproj",
+  "projectFilePath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Identity.Application.Test\\TDS.IdentityService.UnitTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\oluwa\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\oluwa\\.nuget\\packages\\common.logging\\3.4.1\\common.logging.3.4.1.nupkg.sha512",

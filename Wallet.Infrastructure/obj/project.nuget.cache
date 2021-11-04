@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZlGcSsH5p8RTjdDAo9KkZNgon6Fmv7e44F86kKRaDuVpQx8iXKp2Rsl9zDGvMUArX8xGQkR0/0siNSga9HHTNA==",
+  "dgSpecHash": "O01vUtBSE3Wky3U+eG8wKp9WgBkldtqHbYEYkk+9tVtognQa2ocwSDy76rH7ngpQYAyy72CftOt1PGnBcluoXg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Wallet.Infrastructure\\SecurrencyTDS.WalletManager.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\oluwa\\source\\repos\\Securrency\\Wallet.Infrastructure\\TDS.WalletService.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\oluwa\\.nuget\\packages\\common.logging\\3.4.1\\common.logging.3.4.1.nupkg.sha512",
     "C:\\Users\\oluwa\\.nuget\\packages\\common.logging.core\\3.4.1\\common.logging.core.3.4.1.nupkg.sha512",
