@@ -46,7 +46,7 @@ namespace Securrency.Wallet.Controllers
             var result = await _mediator.Send(command);
             if (!result.IsSuccessful)
             {
-                return new BadRequestObjectResult(new { Message = result.Message });
+                return new BadRequestObjectResult(new BaseResponse { Message = result.Message });
 
             }
             return Ok(result?.ResponseModel);

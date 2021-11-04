@@ -2384,10 +2384,7 @@
         },
         "runtime": {
           "bin/placeholder/SecurrencyTDS.WalletManager.Application.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        }
       },
       "SecurrencyTDS.WalletManager.Infrastructure/1.0.0": {
         "type": "project",
@@ -2403,10 +2400,7 @@
         },
         "runtime": {
           "bin/placeholder/SecurrencyTDS.WalletManager.Infrastructure.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        }
       }
     }
   },

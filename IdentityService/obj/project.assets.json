@@ -2340,10 +2340,7 @@
         },
         "runtime": {
           "bin/placeholder/SecurrencyTD.Identity.Application.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        }
       },
       "SecurrencyTDS.Domain/1.0.0": {
         "type": "project",
@@ -2377,10 +2374,7 @@
         },
         "runtime": {
           "bin/placeholder/SecurrencyTDS.IdentityService.Infrastructure.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        }
       }
     }
   },
