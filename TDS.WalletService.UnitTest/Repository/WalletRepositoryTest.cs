@@ -10,6 +10,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xunit;
+using System.Threading;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 
 namespace TDS.WalletService.UnitTest.Repository
 {
@@ -38,11 +40,12 @@ namespace TDS.WalletService.UnitTest.Repository
 
             // Act
             var repository = new Repository<Wallet>(_context.Object);
-            repository.Get(1);
+            var result= repository.Get(1);
 
             // Assert
             _context.Verify(x => x.Set<Wallet>());
             _dbSetMock.Verify(x => x.Find(It.IsAny<int>()));
+            Assert.NotNull(result);
         }
 
 
@@ -65,7 +68,44 @@ namespace TDS.WalletService.UnitTest.Repository
         }
 
 
+        [Fact]
+        public async Task AddAsyc_WalletObjectPassed_ReturnsObectAsync()
+        {
+            // Arrange
 
+            var _dbSetMock = new Mock<DbSet<Wallet>>(); ;// TestUtility.CreateDbSetMock(MockDataUtilty.GetWalletList());
+
+
+            var _context = new Mock<ApplicationDbContext>();
+           
+            _dbSetMock
+               .Setup(x => x.AddAsync(It.IsAny<Wallet>(), It.IsAny<CancellationToken>()))
+               .Callback((Wallet wallet, CancellationToken token) => { })
+               .ReturnsAsync(It.IsAny<EntityEntry<Wallet>>());
+         
+            _context.Setup(m => m.Set<Wallet>()).Returns(_dbSetMock.Object);
+            var repository = new Repository<Wallet>(_context.Object);
+
+
+            //_dbSetMock.Setup(x => x.AddAsync(It.IsAny<Wallet>(), It.IsAny<CancellationToken>()))
+            //   //  .Callback((Wallet model, CancellationToken token) => {   })
+            //    .Returns((Wallet model, CancellationToken token) => new ValueTask<EntityEntry<Wallet>>( (EntityEntry<Wallet>)null ) {   });
+            ////.Returns(new Wallet()); 
+
+            ////var context = new Mock<ApplicationDbContext>();
+            ////_context.Setup(x => x.Set<Wallet>()).Returns(_dbSetMock.Object);
+            var walletAddress = "8888-8888-8888-8888";
+            
+            // Act
+
+
+            var result = await repository.AddAsync(It.IsAny<Wallet>());
+
+            // Assert
+
+            _dbSetMock.Verify(m => m.AddAsync(It.IsAny<Wallet>(), new CancellationToken()), Times.Once);
+
+        }
 
         [Fact]
         public async Task Find_ValidAddresss_ReturnWallet()

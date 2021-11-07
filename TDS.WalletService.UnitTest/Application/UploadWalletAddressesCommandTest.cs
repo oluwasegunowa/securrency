@@ -49,9 +49,9 @@ namespace Identity.Application.Test
 
 
             //Mock Wallet Repository
-            var dbWalletSetMock = TestUtility.CreateDbSetMock(MockDataUtilty.GetWalletList());
-            context.Setup(x => x.Set<Wallet>()).Returns(dbWalletSetMock.Object);
+            var dbWalletSetMock = TestUtility.CreateDbSetMock(MockDataUtilty.GetWalletList());          
             var walletRepository = new Repository<Wallet>(context.Object);
+            context.Setup(x => x.Set<Wallet>()).Returns(dbWalletSetMock.Object);
             _mockUnitOfWork.Setup(m => m.WalletRepository).Returns(walletRepository);
 
         }
@@ -124,13 +124,11 @@ namespace Identity.Application.Test
         //public async Task NewAddressList_Returns_Successful()
         //{
 
-
-
-        //    //Arange
-
-        //    //NULL
-
-
+        //    var context = new Mock<ApplicationDbContext>();
+        //    var dbWalletSetMock = TestUtility.CreateDbSetMock(MockDataUtilty.GetWalletList());
+        //    var walletRepository = new Repository<Wallet>(context.Object);
+        //    context.Setup(x => x.Set<Wallet>()).Returns(dbWalletSetMock.Object);
+        //    _mockUnitOfWork.Setup(m => m.WalletRepository).Returns(walletRepository);
 
         //    UploadWalletAddressesCommand command = new UploadWalletAddressesCommand()
         //    {
@@ -151,10 +149,10 @@ namespace Identity.Application.Test
         //    //Asert
         //    //Do the assertion
 
-        //    Assert.NotNull(_result);
-        //    Assert.True(_result.IsSuccessful);
-        //    Assert.NotNull(_result.ResponseModel);
-        //    Assert.True(_result.ResponseModel.UploadEntriesCount>0);
+        //    //Assert.NotNull(_result);
+        //    //Assert.True(_result.IsSuccessful);
+        //    //Assert.NotNull(_result.ResponseModel);
+        //    //Assert.True(_result.ResponseModel.UploadEntriesCount > 0);
         //}
 
 

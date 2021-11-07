@@ -24,7 +24,7 @@ namespace TDS.WalletService.Infrastructure.Persistence.Repository
           
 
             var result = await Entities.AddAsync(entity);           
-            return result.Entity;
+            return result?.Entity;
         }
 
 
