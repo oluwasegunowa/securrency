@@ -29,6 +29,11 @@ namespace Identity.Application.Handlers
         {
 
 
+            if (String.IsNullOrWhiteSpace(request.UserName))
+            {
+                return await Task.FromResult(""); ;
+            }
+
                 var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtSettings.Value.SecurityKey));
 
                 var claims = new Claim[] { new Claim(ClaimTypes.NameIdentifier, $"{request.UserName.ToString()}")};

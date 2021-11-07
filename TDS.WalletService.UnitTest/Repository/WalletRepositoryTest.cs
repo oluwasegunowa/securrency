@@ -51,7 +51,7 @@ namespace TDS.WalletService.UnitTest.Repository
         {
             // Arrange
 
-            var _dbSetMock = CreateDbSetMock(GetWalletList());
+            var _dbSetMock = TestUtility.CreateDbSetMock(MockDataUtilty.GetWalletList());
 
             var context = new Mock<ApplicationDbContext>();
             _context.Setup(x => x.Set<Wallet>()).Returns(_dbSetMock.Object);
@@ -72,7 +72,7 @@ namespace TDS.WalletService.UnitTest.Repository
         {
 
 
-            var _dbSetMock = CreateDbSetMock(GetWalletList());
+            var _dbSetMock = TestUtility.CreateDbSetMock(MockDataUtilty.GetWalletList());
             var context = new Mock<ApplicationDbContext>();
             _context.Setup(x => x.Set<Wallet>()).Returns(_dbSetMock.Object);
 
@@ -88,7 +88,7 @@ namespace TDS.WalletService.UnitTest.Repository
         {
 
 
-            var _dbSetMock = CreateDbSetMock(GetWalletList());
+            var _dbSetMock = TestUtility.CreateDbSetMock(MockDataUtilty.GetWalletList());
             var context = new Mock<ApplicationDbContext>();
             _context.Setup(x => x.Set<Wallet>()).Returns(_dbSetMock.Object);
 
@@ -100,29 +100,7 @@ namespace TDS.WalletService.UnitTest.Repository
         }
 
 
-        private static Mock<DbSet<T>> CreateDbSetMock<T>(IEnumerable<T> elements) where T : class
-        {
-            var elementsAsQueryable = elements.AsQueryable();
-            var _dbSetMock = new Mock<DbSet<T>>();
-            _dbSetMock.As<IQueryable<T>>().Setup(m => m.Provider).Returns(elementsAsQueryable.Provider);
-            _dbSetMock.As<IQueryable<T>>().Setup(m => m.Expression).Returns(elementsAsQueryable.Expression);
-            _dbSetMock.As<IQueryable<T>>().Setup(m => m.ElementType).Returns(elementsAsQueryable.ElementType);
-            _dbSetMock.As<IQueryable<T>>().Setup(m => m.GetEnumerator()).Returns(elementsAsQueryable.GetEnumerator());
-            return _dbSetMock;
-        }
-
-        private IEnumerable<Wallet> GetWalletList()
-        {
-            var retList = new List<Wallet>
-        {
-            new Wallet {Id = 1,   Address = "1111-1111-1111-1111",   IsActive=true},
-            new Wallet {Id = 2,  Address = "2222-2222-2222-222",    IsActive=true},
-            new Wallet {Id = 3, Address = "3333-33333-3333-333-",  IsActive=true}
-        };
-
-            return retList;
-        }
-
+        
 
     }
 }

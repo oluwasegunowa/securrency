@@ -30,45 +30,52 @@ namespace TDS.WalletService.Application.Handlers
 
 
                 var allActiveWallets =await  _unitOfWork.WalletRepository.Find(f => f.IsActive == true );
-
-                foreach(var wallet in allActiveWallets)
+                DiscoveryResponse response = new DiscoveryResponse()
                 {
-                    var returnTransactions = await _walletTransactionDiscoveryService.GetLatestTransactions(wallet.Address, wallet.LastTransactionDiscoveryToken);
-                    if (!returnTransactions.Any())
-                    {
-                        continue;
-                    }
-
-                        var lastTransaction = returnTransactions.LastOrDefault();
-                        wallet.LastTransactionDiscoveryToken = lastTransaction.PagingToken;
-
-                    //Auto Mapper can be used for this section
-                    var walletTransactions = returnTransactions.Select(s => new WalletTransaction
-                    {
-
-                        AssetCode = s.AssetCode,
-                        PagingToken = s.PagingToken,
-                        Receiver = s.Receiver,
-                        Sender = s.Sender,
-                        SourceAccount = s.SourceAccount,
-                        TransactionHash = s.TransactionHash,
-                        TransactionSuccessful = s.TransactionSuccessful,
-                        TxnAmount = s.TxnAmount,
-                        TxnDate = s.TxnDate,
-                        TxnId = s.TxnId
-
-                    }).ToList();
+                    NoOfWalletScanned = allActiveWallets.Count(),
+                    NoOfWalletsWithNewTransactions=0
+                };
 
 
-                         _unitOfWork.WalletTransactionRepository.AddList(walletTransactions);
+            foreach (var wallet in allActiveWallets)
+            {
+                var returnTransactions = await _walletTransactionDiscoveryService.GetLatestTransactions(wallet.Address, wallet.LastTransactionDiscoveryToken);
+                if (!returnTransactions.Any())
+                {
+                    continue;
+                }
+                response.NoOfWalletsWithNewTransactions++;
+                var lastTransaction = returnTransactions.LastOrDefault();
+                wallet.LastTransactionDiscoveryToken = lastTransaction.PagingToken;
+
+                //Auto Mapper can be used for this section
+                var walletTransactions = returnTransactions.Select(s => new WalletTransaction
+                {
+
+                    AssetCode = s.AssetCode,
+                    PagingToken = s.PagingToken,
+                    Receiver = s.Receiver,
+                    Sender = s.Sender,
+                    SourceAccount = s.SourceAccount,
+                    TransactionHash = s.TransactionHash,
+                    TransactionSuccessful = s.TransactionSuccessful,
+                    TxnAmount = s.TxnAmount,
+                    TxnDate = s.TxnDate,
+                    TxnId = s.TxnId
+
+                }).ToList();
 
 
-                    wallet.LastDiscoveryTimeStamp = DateTime.Now;
-                    await _unitOfWork.WalletRepository.UpdateAsync(wallet);
+                _unitOfWork.WalletTransactionRepository.AddList(walletTransactions);
+
+
+                wallet.LastDiscoveryTimeStamp = DateTime.Now;
+                await _unitOfWork.WalletRepository.UpdateAsync(wallet);
             }
 
             await _unitOfWork.Complete();
-            return new DiscoveryResponse() { Message = $"New transactions discovered." };
+            response.Message = "Transaction discovery completed successfully";
+            return response;
 
 
         }

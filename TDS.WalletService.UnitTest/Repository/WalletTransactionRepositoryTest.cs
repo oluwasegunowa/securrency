@@ -50,7 +50,7 @@ namespace TDS.WalletService.UnitTest.Repository
         {
             // Arrange
 
-            var _dbSetMock = CreateDbSetMock(GetWalletTransactionList());
+            var _dbSetMock = TestUtility.CreateDbSetMock(MockDataUtilty.GetWalletTransactionList());
 
             var context = new Mock<ApplicationDbContext>();
             _context.Setup(x => x.Set<WalletTransaction>()).Returns(_dbSetMock.Object);
@@ -73,8 +73,8 @@ namespace TDS.WalletService.UnitTest.Repository
             // Arrange
 
             var validWallet = "1111-1111-1111-1111";
-            var transactionList = GetWalletTransactionList();
-            var _dbSetMock = CreateDbSetMock(transactionList);
+            var transactionList = MockDataUtilty.GetWalletTransactionList();
+            var _dbSetMock = TestUtility.CreateDbSetMock(transactionList);
             var context = new Mock<ApplicationDbContext>();
             _context.Setup(x => x.Set<WalletTransaction>()).Returns(_dbSetMock.Object);
             var repository = new Repository<WalletTransaction>(_context.Object);
@@ -97,7 +97,7 @@ namespace TDS.WalletService.UnitTest.Repository
             // Arrange
 
             var invalidWallet = "6666-66666-6666-6666";
-            var _dbSetMock = CreateDbSetMock(GetWalletTransactionList());
+            var _dbSetMock = TestUtility.CreateDbSetMock(MockDataUtilty.GetWalletTransactionList());
             var context = new Mock<ApplicationDbContext>();
             _context.Setup(x => x.Set<WalletTransaction>()).Returns(_dbSetMock.Object);
             var repository = new Repository<WalletTransaction>(_context.Object);
@@ -113,39 +113,8 @@ namespace TDS.WalletService.UnitTest.Repository
         }
 
 
-        private static Mock<DbSet<T>> CreateDbSetMock<T>(IEnumerable<T> elements) where T : class
-        {
-            var elementsAsQueryable = elements.AsQueryable();
-            var _dbSetMock = new Mock<DbSet<T>>();
-            _dbSetMock.As<IQueryable<T>>().Setup(m => m.Provider).Returns(elementsAsQueryable.Provider);
-            _dbSetMock.As<IQueryable<T>>().Setup(m => m.Expression).Returns(elementsAsQueryable.Expression);
-            _dbSetMock.As<IQueryable<T>>().Setup(m => m.ElementType).Returns(elementsAsQueryable.ElementType);
-            _dbSetMock.As<IQueryable<T>>().Setup(m => m.GetEnumerator()).Returns(elementsAsQueryable.GetEnumerator());
-            return _dbSetMock;
-        }
 
-        private IEnumerable<WalletTransaction> GetWalletTransactionList()
-        {
-            var retList = new List<WalletTransaction>
-        {
-            new WalletTransaction {Id = 1,  Sender = "1111-1111-1111-1111", Receiver="3333-33333-3333-333-",  AssetCode ="XLM",   TxnAmount=100},
-            new WalletTransaction {Id = 2,  Sender = "2222-2222-2222-222",  Receiver= "1111-1111-1111-1111",AssetCode ="XLM",   TxnAmount=100},
-            new WalletTransaction {Id = 3, Sender = "3333-33333-3333-333-", Receiver="2222-2222-2222-222", AssetCode ="XLM",   TxnAmount=100},
-             new WalletTransaction {Id = 4,  Sender = "1111-1111-1111-1111", Receiver="2222-2222-2222-222", AssetCode ="XLM",     TxnAmount=100},
-            new WalletTransaction {Id = 5,  Sender = "2222-2222-2222-222",  Receiver="1111-1111-1111-1111", AssetCode ="XLM",  TxnAmount=100},
-            new WalletTransaction {Id = 6, Sender = "3333-33333-3333-333-",  Receiver="2222-2222-2222-222", AssetCode ="XLM", TxnAmount=100},
-             new WalletTransaction {Id = 7,  Sender = "1111-1111-1111-1111", Receiver="2222-2222-2222-222",AssetCode ="XLM",     TxnAmount=100},
-            new WalletTransaction {Id = 8,  Sender = "2222-2222-2222-222",  Receiver="1111-1111-1111-1111", AssetCode ="XLM",  TxnAmount=100},
-            new WalletTransaction {Id = 9, Sender = "3333-33333-3333-333-",  Receiver="1111-1111-1111-1111",AssetCode ="XLM",  TxnAmount=100},
-             new WalletTransaction {Id = 10,  Sender = "1111-1111-1111-1111", Receiver="3333-33333-3333-333-",AssetCode ="XLM",     TxnAmount=100},
-            new WalletTransaction {Id = 11,  Sender = "2222-2222-2222-222",  Receiver="3333-33333-3333-333-", AssetCode ="XLM",  TxnAmount=100},
-            new WalletTransaction {Id = 12, Sender = "3333-33333-3333-333-", Receiver="1111-1111-1111-1111", AssetCode ="XLM",  TxnAmount=100}
-
-        };
-
-            return retList;
-        }
-
+       
 
     }
 }

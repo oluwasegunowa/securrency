@@ -21,10 +21,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Application\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\TDS.Domain\TDS.Domain.csproj" />
     <ProjectReference Include="..\TDS.WalletService.Application\TDS.WalletService.Application.csproj" />
     <ProjectReference Include="..\WalletService.API\WalletService.API.csproj" />

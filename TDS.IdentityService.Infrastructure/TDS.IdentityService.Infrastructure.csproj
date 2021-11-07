@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 
   <ItemGroup>
@@ -9,7 +9,6 @@
 
 
   <ItemGroup>
-    <ProjectReference Include="..\Securrency.Domain\TDS.Domain.csproj" />
     <ProjectReference Include="..\TDS.Domain\TDS.Domain.csproj" />
   </ItemGroup>
 

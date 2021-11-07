@@ -64,7 +64,8 @@ namespace TDS.WalletService.Application.Handlers
 
             return new GenericResponse<UploadWalletResponse>()
             {
-                IsSuccessful = true,
+                IsSuccessful = true, 
+                 ResponseModel= uploadresponse,
                 Message = "The list has been uploaded successfully",
                 
             };
