@@ -1,4 +1,4 @@
-# securrency
+# Securrency (TDS)
 Transaction Discovery Service (TDS)
 
 
@@ -6,7 +6,7 @@ Transaction Discovery Service (TDS)
 
 Microservices
 -----------------------------------------------
-I was able to come up with 2 Micro services;
+I came up with 2 Micro services;
 
 1. Identity Service which handles the authentication of users of the API
 2.  WalletManager.API -> This API handles uploading of wallet, tranasction discovery and retrieving of transactions.
